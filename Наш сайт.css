@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Urbanist:wght@500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d1cbcb;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.header {
+  position: relative;
+  height: 77px;
+  width: 100%;
+  background-color: #005d30;
+  text-align: center;
+}
+
+.first__text {
+  font-size: 20px;
+  color: #FFF;
+  line-height: 77px;
+}
+
+.header1 {
+  position: relative;
+  margin-top: 20px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #005d30;
+  background-color: #5b8c67;
+}
+
+thead th,
+tfoot th {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border: 3px solid #005d30;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e0f2e9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #d1e8db;
+}
+
+tbody tr {
+  background-image: url('noise.png');
+  /* Добавьте ваш фон */
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+caption {
+  font-family: "Rock Salt", cursive;
+  padding: 20px;
+  font-style: italic;
+  caption-side: bottom;
+  color: #666;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.tablet {
+  padding: 50px;
+}
+
+.header3,
+.header5 {
+  background-color: #005d30;
+  margin: 20px 0;
+  text-align: center;
+  padding: 10px;
+  color: #FFF;
+}
+
+/* Медиазапросы для планшетов (ширина 768px и меньше) */
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+  }
+
+  .first__text {
+    font-size: 18px;
+    line-height: 60px;
+  }
+
+  th,
+  td {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .tablet {
+    padding: 20px;
+  }
+
+  iframe {
+    height: 500px;
+  }
+}
+
+/* Медиазапросы для телефонов (ширина 480px и меньше) */
+@media (max-width: 480px) {
+  .header {
+    height: 50px;
+  }
+
+  .first__text {
+    font-size: 16px;
+    line-height: 50px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  table {
+    font-size: 10px;
+  }
+
+  .tablet {
+    padding: 10px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
